@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_album_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.musicapp.AlbumListActivity">
+
+
+    <TextView
+        android:id="@+id/album_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List of albums
+    Challenges: Sorting, album art, determine if album is explicit &amp; displaying that." />
+
+
+    <LinearLayout
+        android:id="@+id/album_list_entry"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/nfg_thumbnail_small" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="example of Album"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</LinearLayout>
